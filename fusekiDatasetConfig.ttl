@@ -1,0 +1,46 @@
+# Licensed under the terms of http://www.apache.org/licenses/LICENSE-2.0
+
+## Fuseki Server configuration file.
+
+@prefix :        <#> .
+@prefix fuseki:  <http://jena.apache.org/fuseki#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix tdb:   <http://jena.hpl.hp.com/2008/tdb#> .
+
+[] rdf:type fuseki:Server ;
+ .
+
+# Custom code.
+[] ja:loadClass "org.apache.jena.tdb.TDB" .
+
+
+########################################################################
+# TDB
+<#tdb>  rdf:type fuseki:Service ;
+ fuseki:name              "ALBUM" ;             # http://host/inf
+ fuseki:serviceQuery      "sparql" ;          # SPARQL query service
+ fuseki:serviceUpdate     "update" ;
+ fuseki:serviceUpload	  "upload" ;
+ fuseki:serviceReadGraphStore	"get" ;
+ fuseki:serviceReadWriteGraphStore	"data" ;
+
+ fuseki:dataset           <#dataset2> .       #select which set to 
+
+tdb:GraphTDB    rdfs:subClassOf  ja:Model .
+
+<#dataset2> rdf:type ja:RDFDataset ;
+ ja:defaultGraph <#model2>; 
+ .         
+
+<#model2> a ja:InfModel;
+ ja:baseModel <#tdbGraph>;
+ ja:reasoner
+ [ ja:reasonerURL 
+ <http://jena.hpl.hp.com/2003/OWLFBRuleReasoner>];
+ .
+<#tdbGraph> rdf:type tdb:GraphTDB;
+ tdb:location "run/databases/ALBUM";
+ .
+
