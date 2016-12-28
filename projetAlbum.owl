@@ -16,40 +16,1804 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/masterDCISS/projetAlbum.owl">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#album"/>
+        <Class IRI="#Album"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#creator"/>
+        <Class IRI="#Animal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#owner"/>
+        <Class IRI="#Beach"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#person"/>
+        <Class IRI="#Brother"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#picture"/>
+        <Class IRI="#Cat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#user"/>
+        <Class IRI="#City"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Party"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Picture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#River"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Square"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToTheSameFamily"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#during"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#for"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInside"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBrotherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContainedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFatherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFriendOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMotherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOwnedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSisterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTakenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTakenIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#organized"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#shareWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#to"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#albumDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#albumTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isSelfie"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pictureDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pictureTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alghero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bruxelles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CapitolineHill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chartreuse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Colosseum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GrandPlace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grenoble"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MarcusAurelius"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PiazzaNavona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PlaceFlagey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tevere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TreviFountain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vercors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aCheval"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aLaPlage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#amis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#autumn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bernardPetit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#birthday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#christmas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#colosseo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#colosseumHorse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#easter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#enMarchant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#enPlace1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#enPlace2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#etienneMulere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#famille"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#familleALaPlage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fontanaDiTrevi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#halloween"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#housewarming"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jason"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jeanneDupont"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#laPelosa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lazzaretto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#leTrio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#leoPoulet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lucDupont"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#marcLebeau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#marieBergere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#martineLebeau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mesEnfants"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#newYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#panorama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#paulDupont"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#piazzaDelCampidoglio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#piazzaNavona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pierreDupont"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prets"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#promenade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#promenadeAParis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#roma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#romains"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#spring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#summer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tevere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#thanksgiving"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tous"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vacancesDEté"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wadding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#winter"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Brother"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Male"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isBrotherOf"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Brother"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Male"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isSibling"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Creator"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#User"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#takes"/>
+                <Class IRI="#Picture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Event"/>
+        <ObjectUnionOf>
+            <Class IRI="#Party"/>
+            <Class IRI="#Season"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Owner"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#User"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isOwner"/>
+                <Class IRI="#Picture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <ObjectUnionOf>
+            <Class IRI="#Female"/>
+            <Class IRI="#Male"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Place"/>
+        <ObjectUnionOf>
+            <Class IRI="#Monument"/>
+            <Class IRI="#Nature"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sister"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Female"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isSibling"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sister"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Female"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isSisterOf"/>
+                <Class IRI="#Person"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Subject"/>
+        <ObjectUnionOf>
+            <Class IRI="#Object"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="#creator"/>
-        <Class IRI="#person"/>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Object"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#owner"/>
-        <Class IRI="#person"/>
+        <Class IRI="#Beach"/>
+        <Class IRI="#Nature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#user"/>
-        <Class IRI="#person"/>
+        <Class IRI="#Brother"/>
+        <Class IRI="#Person"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cat"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creator"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Female"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horse"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Male"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monument"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mountain"/>
+        <Class IRI="#Nature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nature"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="#Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Owner"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Party"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#River"/>
+        <Class IRI="#Nature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Season"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sister"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Square"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Album"/>
+        <Class IRI="#Event"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Album"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Place"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Event"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Event"/>
+        <Class IRI="#Picture"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Party"/>
+        <Class IRI="#Season"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#Picture"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Alghero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Bruxelles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Square"/>
+        <NamedIndividual IRI="#CapitolineHill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mountain"/>
+        <NamedIndividual IRI="#Chartreuse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Colosseum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Square"/>
+        <NamedIndividual IRI="#GrandPlace"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Grenoble"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#MarcusAurelius"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Square"/>
+        <NamedIndividual IRI="#PiazzaNavona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Square"/>
+        <NamedIndividual IRI="#PlaceFlagey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Rome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#River"/>
+        <NamedIndividual IRI="#Tevere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#TreviFountain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mountain"/>
+        <NamedIndividual IRI="#Vercors"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#aCheval"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#aLaPlage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Album"/>
+        <NamedIndividual IRI="#amis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#autumn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#bernardPetit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#birthday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#christmas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#colosseo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horse"/>
+        <NamedIndividual IRI="#colosseumHorse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#easter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#enMarchant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#enPlace1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#enPlace2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#etienneMulere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Album"/>
+        <NamedIndividual IRI="#famille"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#familleALaPlage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#fontanaDiTrevi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#halloween"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#housewarming"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horse"/>
+        <NamedIndividual IRI="#jason"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#jeanneDupont"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#laPelosa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#lazzaretto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#leTrio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#lucDupont"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#marcLebeau"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#marieBergere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Female"/>
+        <NamedIndividual IRI="#martineLebeau"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#mesEnfants"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#newYear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#panorama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#paulDupont"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#piazzaDelCampidoglio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#piazzaNavona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Male"/>
+        <NamedIndividual IRI="#pierreDupont"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#prets"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#promenade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Album"/>
+        <NamedIndividual IRI="#promenadeAParis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Album"/>
+        <NamedIndividual IRI="#roma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#romains"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#spring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#summer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#tevere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#thanksgiving"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Picture"/>
+        <NamedIndividual IRI="#tous"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Album"/>
+        <NamedIndividual IRI="#vacancesDEté"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#wadding"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Season"/>
+        <NamedIndividual IRI="#winter"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#Tevere"/>
+        <NamedIndividual IRI="#tevere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#aCheval"/>
+        <NamedIndividual IRI="#marieBergere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#aCheval"/>
+        <NamedIndividual IRI="#Vercors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#aCheval"/>
+        <NamedIndividual IRI="#amis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#aCheval"/>
+        <NamedIndividual IRI="#Grenoble"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#aLaPlage"/>
+        <NamedIndividual IRI="#pierreDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#aLaPlage"/>
+        <NamedIndividual IRI="#vacancesDEté"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenBy"/>
+        <NamedIndividual IRI="#aLaPlage"/>
+        <NamedIndividual IRI="#jeanneDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#aLaPlage"/>
+        <NamedIndividual IRI="#Alghero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <NamedIndividual IRI="#amis"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#bernardPetit"/>
+        <NamedIndividual IRI="#martineLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#bernardPetit"/>
+        <NamedIndividual IRI="#marieBergere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#bernardPetit"/>
+        <NamedIndividual IRI="#marcLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#bernardPetit"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#bernardPetit"/>
+        <NamedIndividual IRI="#etienneMulere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#colosseo"/>
+        <NamedIndividual IRI="#Colosseum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#colosseo"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#colosseumHorse"/>
+        <NamedIndividual IRI="#colosseo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#enMarchant"/>
+        <NamedIndividual IRI="#bernardPetit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#enMarchant"/>
+        <NamedIndividual IRI="#Chartreuse"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#enMarchant"/>
+        <NamedIndividual IRI="#marcLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#enMarchant"/>
+        <NamedIndividual IRI="#amis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#enMarchant"/>
+        <NamedIndividual IRI="#Grenoble"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#enPlace1"/>
+        <NamedIndividual IRI="#GrandPlace"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#enPlace1"/>
+        <NamedIndividual IRI="#marieBergere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#enPlace1"/>
+        <NamedIndividual IRI="#etienneMulere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#enPlace1"/>
+        <NamedIndividual IRI="#amis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#enPlace1"/>
+        <NamedIndividual IRI="#Bruxelles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#enPlace2"/>
+        <NamedIndividual IRI="#etienneMulere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#enPlace2"/>
+        <NamedIndividual IRI="#martineLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#enPlace2"/>
+        <NamedIndividual IRI="#amis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenBy"/>
+        <NamedIndividual IRI="#enPlace2"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#enPlace2"/>
+        <NamedIndividual IRI="#Bruxelles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#etienneMulere"/>
+        <NamedIndividual IRI="#marieBergere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#etienneMulere"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#etienneMulere"/>
+        <NamedIndividual IRI="#martineLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#etienneMulere"/>
+        <NamedIndividual IRI="#marcLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#familleALaPlage"/>
+        <NamedIndividual IRI="#lucDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#familleALaPlage"/>
+        <NamedIndividual IRI="#jeanneDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#familleALaPlage"/>
+        <NamedIndividual IRI="#pierreDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#familleALaPlage"/>
+        <NamedIndividual IRI="#paulDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#familleALaPlage"/>
+        <NamedIndividual IRI="#vacancesDEté"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#familleALaPlage"/>
+        <NamedIndividual IRI="#lazzaretto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#fontanaDiTrevi"/>
+        <NamedIndividual IRI="#TreviFountain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#fontanaDiTrevi"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#fontanaDiTrevi"/>
+        <NamedIndividual IRI="#marieBergere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#fontanaDiTrevi"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#fontanaDiTrevi"/>
+        <NamedIndividual IRI="#Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#jason"/>
+        <NamedIndividual IRI="#aCheval"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isIn"/>
+        <NamedIndividual IRI="#laPelosa"/>
+        <NamedIndividual IRI="#aLaPlage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#leTrio"/>
+        <NamedIndividual IRI="#bernardPetit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#leTrio"/>
+        <NamedIndividual IRI="#marcLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#leTrio"/>
+        <NamedIndividual IRI="#etienneMulere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#leTrio"/>
+        <NamedIndividual IRI="#amis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenBy"/>
+        <NamedIndividual IRI="#leTrio"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#leTrio"/>
+        <NamedIndividual IRI="#Alghero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+        <NamedIndividual IRI="#marcLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+        <NamedIndividual IRI="#marieBergere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+        <NamedIndividual IRI="#martineLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMother"/>
+        <NamedIndividual IRI="#lucDupont"/>
+        <NamedIndividual IRI="#jeanneDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBrotherOf"/>
+        <NamedIndividual IRI="#lucDupont"/>
+        <NamedIndividual IRI="#paulDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBrotherOf"/>
+        <NamedIndividual IRI="#marcLebeau"/>
+        <NamedIndividual IRI="#martineLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#marcLebeau"/>
+        <NamedIndividual IRI="#martineLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#marcLebeau"/>
+        <NamedIndividual IRI="#marieBergere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <NamedIndividual IRI="#marieBergere"/>
+        <NamedIndividual IRI="#martineLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSisterOf"/>
+        <NamedIndividual IRI="#martineLebeau"/>
+        <NamedIndividual IRI="#marcLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#mesEnfants"/>
+        <NamedIndividual IRI="#paulDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#mesEnfants"/>
+        <NamedIndividual IRI="#pierreDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#mesEnfants"/>
+        <NamedIndividual IRI="#lucDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#mesEnfants"/>
+        <NamedIndividual IRI="#vacancesDEté"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#mesEnfants"/>
+        <NamedIndividual IRI="#Alghero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#panorama"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#panorama"/>
+        <NamedIndividual IRI="#Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFather"/>
+        <NamedIndividual IRI="#paulDupont"/>
+        <NamedIndividual IRI="#pierreDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMother"/>
+        <NamedIndividual IRI="#paulDupont"/>
+        <NamedIndividual IRI="#jeanneDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBrotherOf"/>
+        <NamedIndividual IRI="#paulDupont"/>
+        <NamedIndividual IRI="#lucDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#piazzaDelCampidoglio"/>
+        <NamedIndividual IRI="#CapitolineHill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#piazzaDelCampidoglio"/>
+        <NamedIndividual IRI="#MarcusAurelius"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#piazzaDelCampidoglio"/>
+        <NamedIndividual IRI="#marieBergere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#piazzaDelCampidoglio"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenBy"/>
+        <NamedIndividual IRI="#piazzaDelCampidoglio"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#piazzaDelCampidoglio"/>
+        <NamedIndividual IRI="#Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#piazzaNavona"/>
+        <NamedIndividual IRI="#PiazzaNavona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#piazzaNavona"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#piazzaNavona"/>
+        <NamedIndividual IRI="#Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#prets"/>
+        <NamedIndividual IRI="#lucDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#prets"/>
+        <NamedIndividual IRI="#jeanneDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#prets"/>
+        <NamedIndividual IRI="#paulDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#prets"/>
+        <NamedIndividual IRI="#pierreDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#prets"/>
+        <NamedIndividual IRI="#vacancesDEté"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#prets"/>
+        <NamedIndividual IRI="#Alghero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#promenade"/>
+        <NamedIndividual IRI="#jeanneDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#promenade"/>
+        <NamedIndividual IRI="#pierreDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#promenade"/>
+        <NamedIndividual IRI="#vacancesDEté"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#promenade"/>
+        <NamedIndividual IRI="#Alghero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <NamedIndividual IRI="#roma"/>
+        <NamedIndividual IRI="#marieBergere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#romains"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#tevere"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#tevere"/>
+        <NamedIndividual IRI="#Rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#tous"/>
+        <NamedIndividual IRI="#Chartreuse"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#tous"/>
+        <NamedIndividual IRI="#bernardPetit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#tous"/>
+        <NamedIndividual IRI="#marcLebeau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#tous"/>
+        <NamedIndividual IRI="#etienneMulere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInside"/>
+        <NamedIndividual IRI="#tous"/>
+        <NamedIndividual IRI="#leoPoulet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <NamedIndividual IRI="#tous"/>
+        <NamedIndividual IRI="#amis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenBy"/>
+        <NamedIndividual IRI="#tous"/>
+        <NamedIndividual IRI="#marieBergere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <NamedIndividual IRI="#tous"/>
+        <NamedIndividual IRI="#Grenoble"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <NamedIndividual IRI="#vacancesDEté"/>
+        <NamedIndividual IRI="#pierreDupont"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#shareWith"/>
+        <NamedIndividual IRI="#vacancesDEté"/>
+        <NamedIndividual IRI="#jeanneDupont"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#pictureDate"/>
+        <NamedIndividual IRI="#aCheval"/>
+        <Literal datatypeIRI="&xsd;dateTime">14/07/2015 </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isSelfie"/>
+        <NamedIndividual IRI="#mesEnfants"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isSelfie"/>
+        <NamedIndividual IRI="#promenade"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#by"/>
+        <ObjectProperty IRI="#organized"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#for"/>
+        <ObjectProperty IRI="#organized"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFather"/>
+        <ObjectProperty IRI="#hasParents"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMother"/>
+        <ObjectProperty IRI="#hasParents"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParents"/>
+        <ObjectProperty IRI="#belongsToTheSameFamily"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBrotherOf"/>
+        <ObjectProperty IRI="#isSibling"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFatherOf"/>
+        <ObjectProperty IRI="#belongsToTheSameFamily"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMotherOf"/>
+        <ObjectProperty IRI="#belongsToTheSameFamily"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSibling"/>
+        <ObjectProperty IRI="#belongsToTheSameFamily"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSisterOf"/>
+        <ObjectProperty IRI="#isSibling"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#to"/>
+        <ObjectProperty IRI="#organized"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="#isContainedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isFatherOf"/>
+        <ObjectProperty IRI="#hasFather"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isIn"/>
+        <ObjectProperty IRI="#hasInside"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMother"/>
+        <ObjectProperty IRI="#isMotherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isOwner"/>
+        <ObjectProperty IRI="#isOwnedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTakenBy"/>
+        <ObjectProperty IRI="#takes"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasFather"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasMother"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isTakenBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isTakenIn"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#belongsToTheSameFamily"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isFriendOf"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isSibling"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#belongsToTheSameFamily"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isBrotherOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isSibling"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isSisterOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToTheSameFamily"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#by"/>
+        <Class IRI="#Party"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#during"/>
+        <Class IRI="#Picture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#for"/>
+        <Class IRI="#Party"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFather"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInside"/>
+        <Class IRI="#Picture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMother"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParents"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBrotherOf"/>
+        <Class IRI="#Male"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <Class IRI="#Picture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFatherOf"/>
+        <Class IRI="#Male"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIn"/>
+        <Class IRI="#Subject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMotherOf"/>
+        <Class IRI="#Female"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <Class IRI="#Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOwner"/>
+        <Class IRI="#Owner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSibling"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSisterOf"/>
+        <Class IRI="#Female"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTakenBy"/>
+        <Class IRI="#Picture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <Class IRI="#Picture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#shareWith"/>
+        <Class IRI="#Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#takes"/>
+        <Class IRI="#Creator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#to"/>
+        <Class IRI="#Party"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToTheSameFamily"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#by"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Picture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#during"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#for"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFather"/>
+        <Class IRI="#Female"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInside"/>
+        <Class IRI="#Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMother"/>
+        <Class IRI="#Female"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParents"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBrotherOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isContainedBy"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isContainedBy"/>
+            <Class IRI="#Album"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFatherOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFriendOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isIn"/>
+        <Class IRI="#Picture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMotherOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOwnedBy"/>
+        <Class IRI="#Owner"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOwner"/>
+        <Class IRI="#Album"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSibling"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSisterOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTakenBy"/>
+        <Class IRI="#Creator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTakenIn"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#shareWith"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takes"/>
+        <Class IRI="#Picture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#to"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#albumDate"/>
+        <DataProperty IRI="#hasDate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#albumTitle"/>
+        <DataProperty IRI="#title"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#inYear"/>
+        <DataProperty IRI="#hasDate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pictureDate"/>
+        <DataProperty IRI="#hasDate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pictureTitle"/>
+        <DataProperty IRI="#title"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#albumDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#albumTitle"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#inYear"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#pictureDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#pictureTitle"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#albumDate"/>
+        <Class IRI="#Album"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#albumTitle"/>
+        <Class IRI="#Album"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Album"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inYear"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isSelfie"/>
+        <Class IRI="#Picture"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pictureDate"/>
+        <Class IRI="#Picture"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pictureTitle"/>
+        <Class IRI="#Picture"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#albumDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#albumTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inYear"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isSelfie"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pictureDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pictureTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
 </Ontology>
 
 
